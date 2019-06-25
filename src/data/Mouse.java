@@ -4,8 +4,11 @@ import java.awt.*;
 
 public class Mouse {
 
+    // discrete worldSpace
     public static Point pos = new Point();
+    // discrete screenSpace
     public static Point coord = new Point();
+
     public static boolean insideMap = false;
 
     public static void posToCoord(int x, int y) {

@@ -33,7 +33,7 @@ public class MouseMotionHandler implements MouseMotionListener {
                 Mouse.posToCoord(Mouse.pos.x, Mouse.pos.y);
 
                 if (SwingUtilities.isLeftMouseButton(e)) {
-                    if(!SwingUtilities.isRightMouseButton(e)){
+                    if (!SwingUtilities.isRightMouseButton(e)) {
                         if (Tools.active == 2) {
                             Tools.end = Mouse.posToCoord(Mouse.coordToPos(new Point(e.getX(), e.getY())));
                         }
@@ -64,16 +64,13 @@ public class MouseMotionHandler implements MouseMotionListener {
 
     @Override
     public void mouseMoved(MouseEvent e) {
-
         if (Map.mapActive) {
-
             Mouse.insideMap(e.getX(), e.getY());
             if (Mouse.insideMap) {
                 Mouse.coordToPos(e.getX(), e.getY());
                 Mouse.posToCoord(Mouse.pos.x, Mouse.pos.y);
             }
-
         }
-
     }
+
 }
