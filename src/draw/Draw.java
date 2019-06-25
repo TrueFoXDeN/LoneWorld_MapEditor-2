@@ -19,6 +19,7 @@ public class Draw extends JLabel {
         g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_OFF);
 
 
+
         if (Map.mapActive) {
             g.setColor(C.layerInactive);
             //DrawTiles

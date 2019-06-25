@@ -45,7 +45,6 @@ public class Gui {
         jfMain.setSize(WIDTH, HEIGHT);
         jfMain.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         jfMain.setLocationRelativeTo(null);
-        jfMain.addMouseWheelListener(new ScrollHandler());
         jfMain.setResizable(true);
         jfMain.addKeyListener(new KeyHandler());
         jfMain.setIconImage(Toolkit.getDefaultToolkit().getImage("rsc/icons/mapeditor_logo.png"));
