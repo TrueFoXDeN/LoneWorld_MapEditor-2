@@ -2,12 +2,9 @@ package actions;
 
 import data.Map;
 import data.Mouse;
-import gui.Gui;
 
-import java.awt.event.MouseEvent;
 import java.awt.event.MouseWheelEvent;
 import java.awt.event.MouseWheelListener;
-import java.sql.SQLOutput;
 
 public class ScrollHandler implements MouseWheelListener{
 
